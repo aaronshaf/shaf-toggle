@@ -7,7 +7,8 @@
 
 ```html
 <!-- our custom element's source (6.3KB) -->
-<script src="https://unpkg.com/toggle-element@0.0.3"></script>
+<script src="https://unpkg.com/toggle-element"></script>
+<link href="https://unpkg.com/toggle-element/styles.css" rel="stylesheet">
 ```
 
 ```html
