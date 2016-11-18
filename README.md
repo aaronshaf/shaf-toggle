@@ -6,7 +6,7 @@
 ```
 
 ```html
-<!-- our custom element's source (6.3KB) -->
+<!-- our custom element's source (5.9KB + 1.1KB gzipped) -->
 <script src="https://unpkg.com/toggle-element"></script>
 <link href="https://unpkg.com/toggle-element/styles.css" rel="stylesheet">
 ```
