@@ -11,5 +11,5 @@
 ```
 
 ```html
-<aaronshaf-toggle checked value="yesyesyes"></aaronshaf-toggle>
+<aaronshaf-toggle checked value="yes"></aaronshaf-toggle>
 ```
