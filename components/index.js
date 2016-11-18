@@ -58,66 +58,33 @@ export default class Toggle extends Component {
     delete inputProps.className
     delete inputProps.icons
 
-    const classes = classNames('react-toggle', {
-      'react-toggle--checked': this.state.checked,
-      'react-toggle--focus': this.state.hasFocus,
-      'react-toggle--disabled': this.props.disabled,
+    const classes = classNames('aaronshaf-toggle', {
+      'aaronshaf-toggle--checked': this.state.checked,
+      'aaronshaf-toggle--focus': this.state.hasFocus,
+      'aaronshaf-toggle--disabled': this.props.disabled,
     }, className)
-
-    let styles = {
-      // 'display': 'inline-block',
-      // // 'position': 'relative',
-      // 'cursor': 'pointer',
-      // 'backgroundColor': 'transparent',
-      // 'border': '0',
-      // 'padding': '0',
-      // 'WebkitTouchCallout': 'none',
-      // 'WebkitUserSelect': 'none',
-      // 'KhtmlUserSelect': 'none',
-      // 'MozUserSelect': 'none',
-      // 'MsUserSelect': 'none',
-      // 'userSelect': 'none',
-      // 'WebkitTapHighlightColor': 'transparent'
-    }
-
-    const trackCheckStyles = {
-      // 'position': 'absolute',
-      // 'width': '14px',
-      // 'height': '10px',
-      // 'top': '0px',
-      // 'bottom': '0px',
-      // 'marginTop': 'auto',
-      // 'marginBottom': 'auto',
-      // 'lineHeight': '0',
-      // 'left': '8px',
-      // 'opacity': '0',
-      // 'WebkitTransition': 'opacity 0.25s ease',
-      // 'MozTransition': 'opacity 0.25s ease',
-      // 'transition': 'opacity 0.25s ease'
-    }
 
     return (
       <div className={classes}
         onClick={this.handleClick}
         onTouchEnd={this.handleClick}
-        style={styles}
       >
-        <div className='react-toggle-track'>
-          <div className='react-toggle-track-check' style={trackCheckStyles}>
+        <div className='aaronshaf-toggle-track'>
+          <div className='aaronshaf-toggle-track-check'>
             <Check />
           </div>
-          <div className='react-toggle-track-x'>
+          <div className='aaronshaf-toggle-track-x'>
             <X />
           </div>
         </div>
-        <div className='react-toggle-thumb' />
+        <div className='aaronshaf-toggle-thumb' />
 
         <input
           {...inputProps}
           ref={ref => { this.input = ref }}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
-          className='react-toggle-screenreader-only'
+          className='aaronshaf-toggle-screenreader-only'
           type='checkbox' />
       </div>
     )
