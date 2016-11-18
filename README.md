@@ -1,7 +1,7 @@
 ## It's easy peasy
 
 ```html
-<!-- customElements.define polyfill (12.2KB) -->
+<!-- customElements polyfill (12.2KB) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.1.1/document-register-element.js"></script>
 ```
 
