@@ -134,6 +134,23 @@ export default class Toggle extends Component {
       'aaronshaf-toggle--disabled': this.props.disabled,
     }, className)
 
+    const thumbStyles = {
+      'position': 'absolute',
+      'top': '1px',
+      // 'left': '1px',
+      'width': '22px',
+      'height': '22px',
+      // 'border': '1px solid #4D4D4D',
+      'borderRadius': '50%',
+      'backgroundColor': '#FAFAFA',
+      'WebkitBoxSizing': 'border-box',
+      'MozBoxSizing': 'border-box',
+      'boxSizing': 'border-box',
+      'WebkitTransition': 'all 0.25s ease',
+      'MozTransition': 'all 0.25s ease',
+      'transition': 'all 0.25s ease'
+    }
+
     return (
       <div className={classes}
         onClick={this.handleClick}
@@ -148,7 +165,7 @@ export default class Toggle extends Component {
             <X />
           </div>
         </div>
-        <div className='aaronshaf-toggle-thumb' />
+        <div className='aaronshaf-toggle-thumb' style={thumbStyles} />
 
         <input
           {...inputProps}
