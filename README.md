@@ -6,7 +6,7 @@
 ```
 
 ```html
-<!-- the custom element's source (6.3KB) -->
+<!-- our custom element's source (6.3KB) -->
 <script src="https://unpkg.com/toggle-element@0.0.0"></script>
 ```
 
