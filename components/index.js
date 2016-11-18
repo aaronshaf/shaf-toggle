@@ -64,16 +64,50 @@ export default class Toggle extends Component {
       'react-toggle--disabled': this.props.disabled,
     }, className)
 
+    let styles = {
+      // 'display': 'inline-block',
+      // // 'position': 'relative',
+      // 'cursor': 'pointer',
+      // 'backgroundColor': 'transparent',
+      // 'border': '0',
+      // 'padding': '0',
+      // 'WebkitTouchCallout': 'none',
+      // 'WebkitUserSelect': 'none',
+      // 'KhtmlUserSelect': 'none',
+      // 'MozUserSelect': 'none',
+      // 'MsUserSelect': 'none',
+      // 'userSelect': 'none',
+      // 'WebkitTapHighlightColor': 'transparent'
+    }
+
+    const trackCheckStyles = {
+      // 'position': 'absolute',
+      // 'width': '14px',
+      // 'height': '10px',
+      // 'top': '0px',
+      // 'bottom': '0px',
+      // 'marginTop': 'auto',
+      // 'marginBottom': 'auto',
+      // 'lineHeight': '0',
+      // 'left': '8px',
+      // 'opacity': '0',
+      // 'WebkitTransition': 'opacity 0.25s ease',
+      // 'MozTransition': 'opacity 0.25s ease',
+      // 'transition': 'opacity 0.25s ease'
+    }
+
     return (
       <div className={classes}
         onClick={this.handleClick}
-        onTouchEnd={this.handleClick}>
+        onTouchEnd={this.handleClick}
+        style={styles}
+      >
         <div className='react-toggle-track'>
-          <div className='react-toggle-track-check'>
-            {this.getIcon('checked')}
+          <div className='react-toggle-track-check' style={trackCheckStyles}>
+            <Check />
           </div>
           <div className='react-toggle-track-x'>
-            {this.getIcon('unchecked')}
+            <X />
           </div>
         </div>
         <div className='react-toggle-thumb' />
@@ -91,10 +125,3 @@ export default class Toggle extends Component {
 }
 
 Toggle.displayName = 'Toggle'
-
-Toggle.defaultProps = {
-  icons: {
-    checked: <Check />,
-    unchecked: <X />,
-  },
-}
