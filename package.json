@@ -9,7 +9,7 @@
     "styles.css"
   ],
   "name": "toggle-element",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Elegant, accessible toggle element. The prettiest checkbox you ever did see.",
   "directories": {
     "doc": "docs"
