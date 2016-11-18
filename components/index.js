@@ -5,77 +5,6 @@ import classNames from 'classnames'
 import Check from './check'
 import X from './x'
 
-const trackCheckStyles = {
-  'position': 'absolute',
-  'width': '14px',
-  'height': '10px',
-  'top': '0px',
-  'bottom': '0px',
-  'marginTop': 'auto',
-  'marginBottom': 'auto',
-  'lineHeight': '0',
-  'left': '8px',
-  // 'opacity': '0',
-  'WebkitTransition': 'opacity 0.25s ease',
-  'MozTransition': 'opacity 0.25s ease',
-  'transition': 'opacity 0.25s ease'
-}
-
-const xStyles = {
-  'position': 'absolute',
-  'width': '10px',
-  'height': '10px',
-  'top': '0px',
-  'bottom': '0px',
-  'marginTop': 'auto',
-  'marginBottom': 'auto',
-  'lineHeight': '0',
-  'right': '10px',
-  'opacity': '1',
-  'WebkitTransition': 'opacity 0.25s ease',
-  'MozTransition': 'opacity 0.25s ease',
-  'transition': 'opacity 0.25s ease'
-}
-
-const trackStyles = {
-  'width': '50px',
-  'height': '24px',
-  'padding': '0',
-  'borderRadius': '30px',
-  // 'backgroundColor': '#4D4D4D',
-  'WebkitTransition': 'all 0.2s ease',
-  'MozTransition': 'all 0.2s ease',
-  'transition': 'all 0.2s ease'
-}
-
-const srStyles = {
-  'border': '0',
-  'clip': 'rect(0 0 0 0)',
-  'height': '1px',
-  'margin': '-1px',
-  'overflow': 'hidden',
-  'padding': '0',
-  'position': 'absolute',
-  'width': '1px'
-}
-
-const thumbStyles = {
-  'position': 'absolute',
-  'top': '1px',
-  // 'left': '1px',
-  'width': '22px',
-  'height': '22px',
-  // 'border': '1px solid #4D4D4D',
-  'borderRadius': '50%',
-  'backgroundColor': '#FAFAFA',
-  'WebkitBoxSizing': 'border-box',
-  'MozBoxSizing': 'border-box',
-  'boxSizing': 'border-box',
-  'WebkitTransition': 'all 0.25s ease',
-  'MozTransition': 'all 0.25s ease',
-  'transition': 'all 0.25s ease'
-}
-
 export default class Toggle extends Component {
   constructor (props) {
     super(props)
@@ -129,26 +58,42 @@ export default class Toggle extends Component {
     delete inputProps.className
     delete inputProps.icons
 
-    const classes = classNames('aaronshaf-toggle', {
-      'aaronshaf-toggle--checked': this.state.checked,
-      'aaronshaf-toggle--focus': this.state.hasFocus,
-      'aaronshaf-toggle--disabled': this.props.disabled,
+    const classes = classNames('react-toggle', {
+      'react-toggle--checked': this.state.checked,
+      'react-toggle--focus': this.state.hasFocus,
+      'react-toggle--disabled': this.props.disabled,
     }, className)
 
-    const styles = {
-      'display': 'inline-block',
-      'position': 'relative',
-      'cursor': 'pointer',
-      'backgroundColor': 'transparent',
-      'border': '0',
-      'padding': '0',
-      'WebkitTouchCallout': 'none',
-      'WebkitUserSelect': 'none',
-      'KhtmlUserSelect': 'none',
-      'MozUserSelect': 'none',
-      'MsUserSelect': 'none',
-      'userSelect': 'none',
-      'WebkitTapHighlightColor': 'transparent'
+    let styles = {
+      // 'display': 'inline-block',
+      // // 'position': 'relative',
+      // 'cursor': 'pointer',
+      // 'backgroundColor': 'transparent',
+      // 'border': '0',
+      // 'padding': '0',
+      // 'WebkitTouchCallout': 'none',
+      // 'WebkitUserSelect': 'none',
+      // 'KhtmlUserSelect': 'none',
+      // 'MozUserSelect': 'none',
+      // 'MsUserSelect': 'none',
+      // 'userSelect': 'none',
+      // 'WebkitTapHighlightColor': 'transparent'
+    }
+
+    const trackCheckStyles = {
+      // 'position': 'absolute',
+      // 'width': '14px',
+      // 'height': '10px',
+      // 'top': '0px',
+      // 'bottom': '0px',
+      // 'marginTop': 'auto',
+      // 'marginBottom': 'auto',
+      // 'lineHeight': '0',
+      // 'left': '8px',
+      // 'opacity': '0',
+      // 'WebkitTransition': 'opacity 0.25s ease',
+      // 'MozTransition': 'opacity 0.25s ease',
+      // 'transition': 'opacity 0.25s ease'
     }
 
     return (
@@ -157,25 +102,23 @@ export default class Toggle extends Component {
         onTouchEnd={this.handleClick}
         style={styles}
       >
-        <div className='aaronshaf-toggle-track' style={trackStyles}>
-          <div className='aaronshaf-toggle-track-check' style={trackCheckStyles}>
+        <div className='react-toggle-track'>
+          <div className='react-toggle-track-check' style={trackCheckStyles}>
             <Check />
           </div>
-          <div style={xStyles}>
+          <div className='react-toggle-track-x'>
             <X />
           </div>
         </div>
-        <div className='aaronshaf-toggle-thumb' style={thumbStyles} />
+        <div className='react-toggle-thumb' />
 
         <input
           {...inputProps}
           ref={ref => { this.input = ref }}
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
-          className='aaronshaf-toggle-screenreader-only'
-          type='checkbox'
-          style={srStyles}
-        />
+          className='react-toggle-screenreader-only'
+          type='checkbox' />
       </div>
     )
   }
