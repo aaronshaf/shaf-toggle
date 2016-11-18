@@ -1,7 +1,3 @@
-.aaronshaf-toggle {
-  position: relative;
-}
-
 .aaronshaf-toggle--disabled {
   cursor: not-allowed;
   opacity: 0.5;
@@ -31,9 +27,6 @@
 
 .aaronshaf-toggle--checked .aaronshaf-toggle-track-check {
   opacity: 1;
-  -webkit-transition: opacity 0.25s ease;
-  -moz-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
 }
 
 .aaronshaf-toggle--checked .aaronshaf-toggle-track-x {

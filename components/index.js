@@ -5,22 +5,6 @@ import classNames from 'classnames'
 import Check from './check'
 import X from './x'
 
-const styles = {
-  'display': 'inline-block',
-  // 'position': 'relative',
-  'cursor': 'pointer',
-  'backgroundColor': 'transparent',
-  'border': '0',
-  'padding': '0',
-  'WebkitTouchCallout': 'none',
-  'WebkitUserSelect': 'none',
-  'KhtmlUserSelect': 'none',
-  'MozUserSelect': 'none',
-  'MsUserSelect': 'none',
-  'userSelect': 'none',
-  'WebkitTapHighlightColor': 'transparent'
-}
-
 const trackCheckStyles = {
   'position': 'absolute',
   'width': '14px',
@@ -73,6 +57,23 @@ const srStyles = {
   'padding': '0',
   'position': 'absolute',
   'width': '1px'
+}
+
+const thumbStyles = {
+  'position': 'absolute',
+  'top': '1px',
+  // 'left': '1px',
+  'width': '22px',
+  'height': '22px',
+  // 'border': '1px solid #4D4D4D',
+  'borderRadius': '50%',
+  'backgroundColor': '#FAFAFA',
+  'WebkitBoxSizing': 'border-box',
+  'MozBoxSizing': 'border-box',
+  'boxSizing': 'border-box',
+  'WebkitTransition': 'all 0.25s ease',
+  'MozTransition': 'all 0.25s ease',
+  'transition': 'all 0.25s ease'
 }
 
 export default class Toggle extends Component {
@@ -134,21 +135,20 @@ export default class Toggle extends Component {
       'aaronshaf-toggle--disabled': this.props.disabled,
     }, className)
 
-    const thumbStyles = {
-      'position': 'absolute',
-      'top': '1px',
-      // 'left': '1px',
-      'width': '22px',
-      'height': '22px',
-      // 'border': '1px solid #4D4D4D',
-      'borderRadius': '50%',
-      'backgroundColor': '#FAFAFA',
-      'WebkitBoxSizing': 'border-box',
-      'MozBoxSizing': 'border-box',
-      'boxSizing': 'border-box',
-      'WebkitTransition': 'all 0.25s ease',
-      'MozTransition': 'all 0.25s ease',
-      'transition': 'all 0.25s ease'
+    const styles = {
+      'display': 'inline-block',
+      'position': 'relative',
+      'cursor': 'pointer',
+      'backgroundColor': 'transparent',
+      'border': '0',
+      'padding': '0',
+      'WebkitTouchCallout': 'none',
+      'WebkitUserSelect': 'none',
+      'KhtmlUserSelect': 'none',
+      'MozUserSelect': 'none',
+      'MsUserSelect': 'none',
+      'userSelect': 'none',
+      'WebkitTapHighlightColor': 'transparent'
     }
 
     return (
