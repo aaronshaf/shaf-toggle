@@ -11,6 +11,6 @@
 ```
 
 ```html
-<!-- it's really that easy -->
-<aaronshaf-toggle value="yesyesyes"></aaronshaf-toggle>
+<!-- usage -->
+<aaronshaf-toggle checked value="yesyesyes"></aaronshaf-toggle>
 ```
