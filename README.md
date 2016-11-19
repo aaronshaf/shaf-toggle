@@ -18,3 +18,9 @@
 ```
 
 Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
+
+## Contributors
+
+* [aaronshaf](https://github.com/aaronshaf)
+* [ahstro](https://github.com/ahstro)
+* This project inherits work from [react-toggle](https://github.com/aaronshaf/react-toggle).
