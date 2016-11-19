@@ -34,7 +34,8 @@
     "custom",
     "element",
     "input",
-    "checkbox"
+    "checkbox",
+    "web-components"
   ],
   "author": "Aaron Shafovaloff <aaronshaf@gmail.com>",
   "license": "MIT",
