@@ -7,8 +7,8 @@
 
 ```html
 <!-- our custom element's source (5.8KB + 1.1KB gzipped) -->
-<script src="https://unpkg.com/shaf-toggle"></script>
-<link href="https://unpkg.com/shaf-toggle/styles.css" rel="stylesheet">
+<script src="https://unpkg.com/shaf-toggle@0.0.19"></script>
+<link href="https://unpkg.com/shaf-toggle@0.0.19/styles.css" rel="stylesheet">
 ```
 
 ```html
