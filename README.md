@@ -19,6 +19,12 @@
 
 Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
 
+Because this wraps an existing `<input type="checkbox" />`:
+
+* It is form-friendly.
+* It doesn't mess with your event handlers.
+* Your checkbox still works if JavaScript is turned off or fails to load.
+
 ## Contributors
 
 * [aaronshaf](https://github.com/aaronshaf)
