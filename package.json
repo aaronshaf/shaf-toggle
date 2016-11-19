@@ -10,7 +10,7 @@
     "styles.css"
   ],
   "name": "shaf-toggle",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Elegant, accessible toggle element. The prettiest checkbox you ever did see.",
   "directories": {
     "doc": "docs"
