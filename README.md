@@ -12,7 +12,9 @@
 ```
 
 ```html
-<shaf-toggle checked value="yes"></shaf-toggle>
+<shaf-toggle>
+  <input type="checkbox" name="smooooth" value="yes" checked />
+</shaf-toggle>
 ```
 
 Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
