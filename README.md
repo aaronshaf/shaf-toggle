@@ -1,8 +1,8 @@
 ## It's easy peasy
 
 ```html
-<!-- customElements polyfill (12.2KB) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.1.1/document-register-element.js"></script>
+<!-- Custom Elements polyfill (2.9KB) -->
+<script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
 ```
 
 ```html
