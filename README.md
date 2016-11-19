@@ -12,7 +12,7 @@
 ```
 
 ```html
-<aaronshaf-toggle checked value="yes"></aaronshaf-toggle>
+<shaf-toggle checked value="yes"></shaf-toggle>
 ```
 
 Check out the [demo](https://aaronshaf.github.io/toggle-element/).

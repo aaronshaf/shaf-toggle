@@ -8,11 +8,13 @@ import X from './x'
 export default class Toggle extends Component {
   constructor (props) {
     super(props)
+    this.handleInputChange = this.handleInputChange.bind(this)
     this.handleClick = this.handleClick.bind(this)
     this.handleFocus = this.setState.bind(this, { hasFocus: true }, () => {})
     this.handleBlur = this.setState.bind(this, { hasFocus: false }, () => {})
+    this.input = props.input
     this.state = {
-      checked: !!(props.checked || props.defaultChecked),
+      checked: !!(props.input.checked || props.defaultChecked),
       hasFocus: false,
     }
   }
@@ -32,7 +34,7 @@ export default class Toggle extends Component {
       return
     }
 
-    if (!('checked' in this.props)) {
+    if (!(this.input.props.checked)) {
       this.setState({checked: checkbox.checked})
     }
   }
@@ -51,6 +53,22 @@ export default class Toggle extends Component {
   //   return shallowCompare(this, nextProps, nextState)
   // }
 
+  handleInputChange () {
+    this.setState({ checked: this.input.checked })
+  }
+
+  componentDidMount () {
+    this.input.addEventListener('focus', this.handleFocus)
+    this.input.addEventListener('blur', this.handleBlur)
+    this.input.addEventListener('change', this.handleInputChange)
+  }
+
+  componentWillUnmount () {
+    this.input.removeEventListener('focus', this.handleFocus)
+    this.input.removeEventListener('blur', this.handleBlur)
+    this.input.removeEventListener('change', this.handleInputChange)
+  }
+
   render () {
     const { className, icons: _icons } = this.props
 
@@ -58,10 +76,10 @@ export default class Toggle extends Component {
     delete inputProps.className
     delete inputProps.icons
 
-    const classes = classNames('aaronshaf-toggle', {
-      'aaronshaf-toggle--checked': this.state.checked,
-      'aaronshaf-toggle--focus': this.state.hasFocus,
-      'aaronshaf-toggle--disabled': this.props.disabled,
+    const classes = classNames('shaf-toggle', {
+      'shaf-toggle--checked': this.state.checked,
+      'shaf-toggle--focus': this.state.hasFocus,
+      'shaf-toggle--disabled': this.props.disabled,
     }, className)
 
     return (
@@ -69,23 +87,15 @@ export default class Toggle extends Component {
         onClick={this.handleClick}
         onTouchEnd={this.handleClick}
       >
-        <div className='aaronshaf-toggle-track'>
-          <div className='aaronshaf-toggle-track-check'>
+        <div className='shaf-toggle-track'>
+          <div className='shaf-toggle-track-check'>
             <Check />
           </div>
-          <div className='aaronshaf-toggle-track-x'>
+          <div className='shaf-toggle-track-x'>
             <X />
           </div>
         </div>
-        <div className='aaronshaf-toggle-thumb' />
-
-        <input
-          {...inputProps}
-          ref={ref => { this.input = ref }}
-          onFocus={this.handleFocus}
-          onBlur={this.handleBlur}
-          className='aaronshaf-toggle-screenreader-only'
-          type='checkbox' />
+        <div className='shaf-toggle-thumb' />
       </div>
     )
   }

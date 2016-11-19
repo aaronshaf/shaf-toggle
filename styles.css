@@ -1,4 +1,4 @@
-.aaronshaf-toggle {
+.shaf-toggle {
   display: inline-block;
   position: relative;
   cursor: pointer;
@@ -17,7 +17,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.aaronshaf-toggle-screenreader-only {
+.shaf-toggle-screenreader-only {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -28,14 +28,14 @@
   width: 1px;
 }
 
-.aaronshaf-toggle--disabled {
+.shaf-toggle--disabled {
   cursor: not-allowed;
   opacity: 0.5;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
 
-.aaronshaf-toggle-track {
+.shaf-toggle-track {
   width: 50px;
   height: 24px;
   padding: 0;
@@ -46,19 +46,19 @@
   transition: all 0.2s ease;
 }
 
-.aaronshaf-toggle:hover:not(.aaronshaf-toggle--disabled) .aaronshaf-toggle-track {
+.shaf-toggle:hover:not(.shaf-toggle--disabled) .shaf-toggle-track {
   background-color: #000000;
 }
 
-.aaronshaf-toggle--checked .aaronshaf-toggle-track {
+.shaf-toggle--checked .shaf-toggle-track {
   background-color: #19AB27;
 }
 
-.aaronshaf-toggle--checked:hover:not(.aaronshaf-toggle--disabled) .aaronshaf-toggle-track {
+.shaf-toggle--checked:hover:not(.shaf-toggle--disabled) .shaf-toggle-track {
   background-color: #128D15;
 }
 
-.aaronshaf-toggle-track-check {
+.shaf-toggle-track-check {
   position: absolute;
   width: 14px;
   height: 10px;
@@ -74,14 +74,14 @@
   transition: opacity 0.25s ease;
 }
 
-.aaronshaf-toggle--checked .aaronshaf-toggle-track-check {
+.shaf-toggle--checked .shaf-toggle-track-check {
   opacity: 1;
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
 
-.aaronshaf-toggle-track-x {
+.shaf-toggle-track-x {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -97,11 +97,11 @@
   transition: opacity 0.25s ease;
 }
 
-.aaronshaf-toggle--checked .aaronshaf-toggle-track-x {
+.shaf-toggle--checked .shaf-toggle-track-x {
   opacity: 0;
 }
 
-.aaronshaf-toggle-thumb {
+.shaf-toggle-thumb {
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   position: absolute;
   top: 1px;
@@ -121,18 +121,18 @@
   transition: all 0.25s ease;
 }
 
-.aaronshaf-toggle--checked .aaronshaf-toggle-thumb {
+.shaf-toggle--checked .shaf-toggle-thumb {
   left: 27px;
   border-color: #19AB27;
 }
 
-.aaronshaf-toggle--focus .aaronshaf-toggle-thumb {
+.shaf-toggle--focus .shaf-toggle-thumb {
   -webkit-box-shadow: 0px 0px 3px 2px #0099E0;
   -moz-box-shadow: 0px 0px 3px 2px #0099E0;
   box-shadow: 0px 0px 2px 3px #0099E0;
 }
 
-.aaronshaf-toggle:active:not(.aaronshaf-toggle--disabled) .aaronshaf-toggle-thumb {
+.shaf-toggle:active:not(.shaf-toggle--disabled) .shaf-toggle-thumb {
   -webkit-box-shadow: 0px 0px 5px 5px #0099E0;
   -moz-box-shadow: 0px 0px 5px 5px #0099E0;
   box-shadow: 0px 0px 5px 5px #0099E0;
