@@ -9,7 +9,7 @@
     "index.js",
     "styles.css"
   ],
-  "name": "toggle-element",
+  "name": "shaf-toggle",
   "version": "0.0.13",
   "description": "Elegant, accessible toggle element. The prettiest checkbox you ever did see.",
   "directories": {
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aaronshaf/toggle-element.git"
+    "url": "git+https://github.com/aaronshaf/shaf-toggle.git"
   },
   "keywords": [
     "toggle",
@@ -39,7 +39,7 @@
   "author": "Aaron Shafovaloff <aaronshaf@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aaronshaf/toggle-element/issues"
+    "url": "https://github.com/aaronshaf/shaf-toggle/issues"
   },
-  "homepage": "https://github.com/aaronshaf/toggle-element#readme"
+  "homepage": "https://github.com/aaronshaf/shaf-toggle#readme"
 }

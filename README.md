@@ -7,12 +7,12 @@
 
 ```html
 <!-- our custom element's source (5.9KB + 1.1KB gzipped) -->
-<script src="https://unpkg.com/toggle-element"></script>
-<link href="https://unpkg.com/toggle-element/styles.css" rel="stylesheet">
+<script src="https://unpkg.com/shaf-toggle"></script>
+<link href="https://unpkg.com/shaf-toggle/styles.css" rel="stylesheet">
 ```
 
 ```html
 <shaf-toggle checked value="yes"></shaf-toggle>
 ```
 
-Check out the [demo](https://aaronshaf.github.io/toggle-element/).
+Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).

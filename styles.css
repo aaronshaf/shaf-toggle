@@ -1,3 +1,10 @@
+shaf-toggle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  line-height: 1rem;
+}
+
 .shaf-toggle {
   display: inline-block;
   position: relative;
