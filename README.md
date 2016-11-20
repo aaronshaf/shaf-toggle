@@ -16,6 +16,7 @@
 ### With HTML imports
 ```html
 <!-- HTML Imports & Custom Elements v1 polyfills (6.6KB + 2.9KB) -->
+<script src="https://unpkg.com/webcomponents.js@0.7.23/HTMLImports.min.js"></script>
 <script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
 ```
 
