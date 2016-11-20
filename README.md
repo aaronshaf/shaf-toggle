@@ -1,7 +1,9 @@
 ## It's easy peasy
 
+### Without HTML imports
+
 ```html
-<!-- Custom Elements polyfill (2.9KB) -->
+<!-- Custom Elements v1 polyfill (2.9KB) -->
 <script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
 ```
 
@@ -11,6 +13,19 @@
 <link href="https://unpkg.com/shaf-toggle@0.0.19/styles.css" rel="stylesheet">
 ```
 
+### With HTML imports
+```html
+<!-- HTML Imports & Custom Elements v1 polyfills (6.6KB + 2.9KB) -->
+<script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
+```
+
+```html
+<!-- our custom element's source (5.8KB + 1.1KB gzipped) -->
+<link rel="import" href="https://unpkg.com/shaf-toggle@0.0.19/imports.html">
+```
+
+### Basic usage
+
 ```html
 <shaf-toggle>
   <input type="checkbox" name="smooooth" value="yes" checked />
@@ -18,6 +33,9 @@
 ```
 
 Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
+
+
+### Benefits
 
 Because this wraps an existing `<input type="checkbox" />`:
 
