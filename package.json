@@ -11,7 +11,7 @@
     "imports.html"
   ],
   "name": "shaf-toggle",
-  "version": "0.0.19",
+  "version": "0.0.20",
   "description": "Elegant, accessible toggle element. The prettiest checkbox you ever did see.",
   "directories": {
     "doc": "docs"
