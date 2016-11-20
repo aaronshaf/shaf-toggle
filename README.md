@@ -21,7 +21,6 @@
 ```
 
 ```html
-<!-- our custom element's source (5.8KB + 1.1KB gzipped) -->
 <link rel="import" href="https://unpkg.com/shaf-toggle@0.0.20/imports.html">
 ```
 
