@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "webpack define.js index.js -p --watch",
+    "dev": "webpack define.js index.js --watch",
     "build": "webpack define.js index.js -p",
     "docs": "webpack define.js docs/index.js -p"
   },
@@ -22,6 +22,7 @@
     "babel-plugin-transform-react-jsx": "^6.8.0",
     "babel-preset-es2015": "^6.18.0",
     "classnames": "^2.2.5",
+    "create-element-class": "^1.0.1",
     "document-register-element": "^1.3.0",
     "preact": "^6.4.0",
     "webpack": "^1.13.3"
@@ -43,8 +44,5 @@
   "bugs": {
     "url": "https://github.com/aaronshaf/shaf-toggle/issues"
   },
-  "homepage": "https://github.com/aaronshaf/shaf-toggle#readme",
-  "dependencies": {
-    "babel-html-element": "^1.0.1"
-  }
+  "homepage": "https://github.com/aaronshaf/shaf-toggle#readme"
 }
