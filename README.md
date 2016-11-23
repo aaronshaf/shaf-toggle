@@ -9,8 +9,8 @@
 
 ```html
 <!-- our custom element's source (5.8KB + 1.1KB gzipped) -->
-<script src="https://unpkg.com/shaf-toggle@0.0.22"></script>
-<link href="https://unpkg.com/shaf-toggle@0.0.22/styles.css" rel="stylesheet">
+<script src="https://unpkg.com/shaf-toggle@0.0.23"></script>
+<link href="https://unpkg.com/shaf-toggle@0.0.23/styles.css" rel="stylesheet">
 ```
 
 ### With HTML imports
@@ -21,7 +21,7 @@
 ```
 
 ```html
-<link rel="import" href="https://unpkg.com/shaf-toggle@0.0.22/imports.html">
+<link rel="import" href="https://unpkg.com/shaf-toggle@0.0.23/imports.html">
 ```
 
 ### Basic usage
