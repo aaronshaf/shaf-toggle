@@ -1,7 +1,7 @@
 /** @jsx preact.h */
 import preact from 'preact'
 import ToggleComponent from './components'
-import HTMLElement from './html-element'
+import HTMLElement from 'babel-html-element'
 
 export default class ToggleElement extends HTMLElement {
   attributeChangedCallback(name, oldValue, newValue) {

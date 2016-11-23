@@ -43,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/aaronshaf/shaf-toggle/issues"
   },
-  "homepage": "https://github.com/aaronshaf/shaf-toggle#readme"
+  "homepage": "https://github.com/aaronshaf/shaf-toggle#readme",
+  "dependencies": {
+    "babel-html-element": "^1.0.1"
+  }
 }
