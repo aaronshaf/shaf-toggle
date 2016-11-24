@@ -2,6 +2,8 @@
 
 <img src="https://d3vv6lp55qjaqc.cloudfront.net/items/3A2x0R3Z2E3q0R0i0E1i/Screen%20Recording%202016-11-24%20at%2011.43%20AM.gif?X-CloudApp-Visitor-Id=d6a8dd4490c61afdba8a0a2082273aa1&v=61a19333" height="32px" />
 
+Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
+
 ```html
 <!-- Custom Elements v1 polyfill (2.9KB gzipped) -->
 <script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
@@ -19,8 +21,6 @@
   <input type="checkbox" name="smooooth" value="yes" checked />
 </shaf-toggle>
 ```
-
-Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
 
 
 ### Benefits
