@@ -1,9 +1,5 @@
 export default
-`:host {
-  contain: content;
-}
-
-.shaf-toggle {
+`.shaf-toggle {
   display: inline-block;
   position: relative;
   cursor: pointer;
