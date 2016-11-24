@@ -5,12 +5,12 @@
 Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
 
 ```html
-<!-- Custom Elements v1 polyfill (2.9KB gzipped) -->
+<!-- Custom Elements v1 polyfill (2.7KB gzipped) -->
 <script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
 ```
 
 ```html
-<!-- our custom element's source (18.7KB gzipped) -->
+<!-- our custom element's source (6.5KB gzipped) -->
 <script src="https://unpkg.com/shaf-toggle@1.0.4"></script>
 ```
 
