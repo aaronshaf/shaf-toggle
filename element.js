@@ -61,8 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   padding: 0;
   position: fixed;
   width: 1px;
-}
-`
-  ))
+}`))
   document.head.insertBefore(tagStyle, document.head.firstChild)
 })
