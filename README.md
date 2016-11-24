@@ -1,6 +1,6 @@
 ## It's easy peasy
 
-![shaf-toggle](https://d3vv6lp55qjaqc.cloudfront.net/items/3A2x0R3Z2E3q0R0i0E1i/Screen%20Recording%202016-11-24%20at%2011.43%20AM.gif?X-CloudApp-Visitor-Id=d6a8dd4490c61afdba8a0a2082273aa1&v=61a19333)
+<img src="https://d3vv6lp55qjaqc.cloudfront.net/items/3A2x0R3Z2E3q0R0i0E1i/Screen%20Recording%202016-11-24%20at%2011.43%20AM.gif?X-CloudApp-Visitor-Id=d6a8dd4490c61afdba8a0a2082273aa1&v=61a19333" height="32px" />
 
 ```html
 <!-- Custom Elements v1 polyfill (2.9KB gzipped) -->
