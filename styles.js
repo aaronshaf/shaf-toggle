@@ -1,8 +1,6 @@
-shaf-toggle {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 4px;
-  line-height: 1rem;
+export default
+`:host {
+  contain: content;
 }
 
 .shaf-toggle {
@@ -22,17 +20,6 @@ shaf-toggle {
 
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent;
-}
-
-.shaf-toggle-screenreader-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
 }
 
 .shaf-toggle--disabled {
@@ -143,4 +130,4 @@ shaf-toggle {
   -webkit-box-shadow: 0px 0px 5px 5px #0099E0;
   -moz-box-shadow: 0px 0px 5px 5px #0099E0;
   box-shadow: 0px 0px 5px 5px #0099E0;
-}
+}`

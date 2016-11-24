@@ -1,27 +1,13 @@
 ## It's easy peasy
 
-### Without HTML imports
-
 ```html
-<!-- Custom Elements v1 polyfill (2.9KB) -->
+<!-- Custom Elements v1 polyfill (2.9KB gzipped) -->
 <script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
 ```
 
 ```html
-<!-- our custom element's source (5.8KB + 1.1KB gzipped) -->
+<!-- our custom element's source (18.7KB gzipped) -->
 <script src="https://unpkg.com/shaf-toggle@0.0.23"></script>
-<link href="https://unpkg.com/shaf-toggle@0.0.23/styles.css" rel="stylesheet">
-```
-
-### With HTML imports
-```html
-<!-- HTML Imports & Custom Elements v1 polyfills (6.6KB + 2.9KB) -->
-<script src="https://unpkg.com/webcomponents.js@0.7.23/HTMLImports.min.js"></script>
-<script src="https://unpkg.com/@webcomponents/custom-elements@1.0.0-alpha.3"></script>
-```
-
-```html
-<link rel="import" href="https://unpkg.com/shaf-toggle@0.0.23/imports.html">
 ```
 
 ### Basic usage

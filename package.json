@@ -1,14 +1,11 @@
 {
   "scripts": {
-    "dev": "webpack define.js index.js --watch",
-    "build": "webpack define.js index.js -p",
-    "docs": "webpack define.js docs/index.js -p"
+    "dev": "webpack define.js index.js -p --watch",
+    "build": "webpack define.js index.js -p"
   },
   "main": "index.js",
   "files": [
-    "index.js",
-    "styles.css",
-    "imports.html"
+    "index.js"
   ],
   "name": "shaf-toggle",
   "version": "0.0.23",
