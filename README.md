@@ -14,7 +14,7 @@ Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
 <script src="https://unpkg.com/shaf-toggle@1.0.8"></script>
 ```
 
-### Basic usage
+### Usage
 
 ```html
 <shaf-toggle>
