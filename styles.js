@@ -31,9 +31,12 @@ export default
   padding: 0;
   border-radius: 30px;
   background-color: #4D4D4D;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+}
+
+.shaf-toggle--focus .shaf-toggle-track {
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .shaf-toggle:hover:not(.shaf-toggle--disabled) .shaf-toggle-track {
@@ -92,7 +95,6 @@ export default
 }
 
 .shaf-toggle-thumb {
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   position: absolute;
   top: 1px;
   left: 1px;
@@ -106,9 +108,10 @@ export default
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  -webkit-transition: left 0.25s ease, box-shadow 0.25s ease;
+  -moz-transition: left 0.25s ease, box-shadow 0.25s ease;
+  transition: left 0.25s ease, box-shadow 0.25s ease;
+  will-change: left, box-shadow;
 }
 
 .shaf-toggle--checked .shaf-toggle-thumb {
