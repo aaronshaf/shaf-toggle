@@ -7,7 +7,7 @@
 
 ```html
 <!-- our custom element's source (18.7KB gzipped) -->
-<script src="https://unpkg.com/shaf-toggle@1.0.3"></script>
+<script src="https://unpkg.com/shaf-toggle@1.0.4"></script>
 ```
 
 ### Basic usage
