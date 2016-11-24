@@ -23,7 +23,7 @@ export default createElementClass({
     this.appendChild(this.container)
 
     this.input = this.querySelector('input')
-    Object.assign(this.input.style, screenreaderOnlyStyle)
+    this.input.className += ' shaf-screenreader-only'
     this.updateRendering()
   },
 
@@ -45,23 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const tagStyle = document.createElement('style')
   tagStyle.type = 'text/css'
   tagStyle.appendChild(document.createTextNode(
-    `shaf-toggle {
-      display: inline-block;
-      vertical-align: middle;
-      margin-right: 4px;
-      line-height: 1rem;
-    }`
+`shaf-toggle {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+  line-height: 1rem;
+}
+
+.shaf-screenreader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  width: 1px;
+}
+`
   ))
   document.head.insertBefore(tagStyle, document.head.firstChild)
 })
-
-var screenreaderOnlyStyle = {
-  border: '0',
-  clip: 'rect(0 0 0 0)',
-  height: '1px',
-  margin: '-1px',
-  overflow: 'hidden',
-  padding: '0',
-  position: 'fixed',
-  width: '1px'
-}
