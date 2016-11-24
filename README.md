@@ -11,7 +11,7 @@ Check out the [demo](https://aaronshaf.github.io/shaf-toggle/).
 
 ```html
 <!-- our custom element's source (6.5KB gzipped) -->
-<script src="https://unpkg.com/shaf-toggle@1.0.7"></script>
+<script src="https://unpkg.com/shaf-toggle@1.0.8"></script>
 ```
 
 ### Basic usage
