@@ -1,9 +1,6 @@
 {
   "presets": ["es2015"],
   "plugins": [
-    ["transform-react-jsx", { "pragma":"h" }],
-    ["babel-plugin-transform-builtin-extend", {
-      "globals": ["HTMLElement", "Error"]
-    }]
+    ["transform-react-jsx", { "pragma":"h" }]
   ]
 }
