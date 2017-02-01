@@ -36,3 +36,11 @@ Because this wraps an existing `<input type="checkbox" />`:
 * [aaronshaf](https://github.com/aaronshaf)
 * [ahstro](https://github.com/ahstro)
 * This project inherits work from [react-toggle](https://github.com/aaronshaf/react-toggle).
+
+## See also
+
+* [shaf-button](https://github.com/aaronshaf/shaf-button)
+* [shaf-chart](https://github.com/aaronshaf/shaf-chart)
+* [shaf-star-rating](https://github.com/aaronshaf/shaf-star-rating)
+* [shaf-unified-diff](https://github.com/aaronshaf/shaf-unified-diff)
+* [shaf-timeago](https://github.com/aaronshaf/shaf-timeago)
