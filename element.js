@@ -10,6 +10,16 @@ export default createElementClass({
   },
 
   connectedCallback() {
+    if (this.querySelector('input')) {
+      this.init()
+    } else {
+      window.requestAnimationFrame(() => {
+        this.init()
+      })
+    }
+  },
+
+  init() {
     this.container = document.createElement('div')
 
     if (document.body.attachShadow) {
