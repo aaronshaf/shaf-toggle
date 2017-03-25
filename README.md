@@ -11,7 +11,7 @@ Check out the [demo](https://aaronshaf.github.io/shaf-toggle/). Works in IE11, E
 
 ```html
 <!-- our custom element's source (6.5KB gzipped) -->
-<script src="https://unpkg.com/shaf-toggle@1.0.8"></script>
+<script src="https://unpkg.com/shaf-toggle@1.0.9"></script>
 ```
 
 ### Usage
